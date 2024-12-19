@@ -1,0 +1,75 @@
+/* Style global pour le body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #e0eafc, #cfdef3); /* Dégradé de fond */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style pour le titre h1 */
+h1 {
+    color: #2c3e50; /* Bleu foncé élégant */
+    font-size: 3rem;
+    margin-top: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre portée */
+}
+
+/* Style pour la ligne horizontale */
+hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Dégradé horizontal */
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+/* Style pour les boutons */
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to bottom right, #ff7e5f, #feb47b); /* Dégradé d'orange */
+    padding: 12px 30px;
+    border-radius: 50px; /* Boutons arrondis */
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Ombre élégante */
+    margin-top: 20px;
+}
+
+/* Espacement entre les boutons */
+.button + .button {
+    margin-top: 25px;
+}
+
+/* Effets au survol des boutons */
+.button:hover {
+    background: linear-gradient(to bottom right, #feb47b, #ff7e5f); /* Inverse le dégradé */
+    transform: scale(1.1); /* Agrandit légèrement */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Augmente l'ombre */
+}
+
+/* Effet actif sur clic */
+.button:active {
+    transform: scale(0.95); /* Réduit légèrement */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); /* Diminue l'ombre */
+}
+
+/* Ajouter une animation subtile au chargement */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body, h1, .button {
+    animation: fadeIn 0.8s ease-out;
+}
